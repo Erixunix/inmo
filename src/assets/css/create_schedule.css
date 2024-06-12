@@ -1,0 +1,157 @@
+.header-tempo {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+  
+.header-tempo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+  
+.header-tempo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.header-tempo li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+.header-tempo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+  
+.header-tempo a:hover {
+    color: #ff9900;
+}
+
+.create-tempo {
+    height: 88vh;
+    background: #FFFFFF;
+    color: black;
+    text-align: center;
+}
+
+.schedule-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 40px; 
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: grab;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.schedule-item:hover {
+    background-color: #f5f5f5; 
+}
+
+.schedule-item:active {
+    cursor: grabbing; 
+}
+
+
+.schedule-item table tbody tr{
+    border: 0;
+}
+
+.schedule-item-header{
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+.dropdowns-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+  
+.dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+  
+.dropdown select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn:active {
+    background-color: #1f6698;
+    border-color: #1f6698;
+}
+
+
+.contenedor-tabla-schedule{
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #000000;
+}
+
+.schedule-table {
+    border-collapse: raise;
+    width: 70%; 
+    text-align: center;
+}
+  
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+  
+.schedule-table tbody td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.schedule-table thead th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+.schedule-table tbody td {
+    background-color: #fff;
+    color: #333;
+    width: 40px;
+}
+.schedule-cell{
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.main_error
+{
+    background: var(--dangertwo);
+    min-height: 100vh;
+}
+
+.game{
+    min-height: 100vh;
+    height: max-content;
+    font-size: 10vh;
+    font-weight: 600;
+}
+
+.btn_back
+{
+    color: var(--light);
+    background: none;
+    
+}
+
+.btn_play
+{
+    color: var(--light);
+    background: none;
+    
+}
+
+.title_error{
+    color: var(--light);
+    background: none;
+    text-decoration: none;
+}
+
+.title_error:hover{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.error{
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.msg_error
+{
+    margin: 20px auto;
+    color: var(--light);
+    font-size: 8vh;
+    font-weight: bolder;
+    writing-mode: vertical-rl; /* vertical right-to-left */
+    text-orientation: upright; /* orientación del texto hacia arriba */
+    white-space: nowrap; /* para evitar que el texto se divida en varias líneas */
+}
+

@@ -1,0 +1,250 @@
+.dash_main {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient);
+}
+
+.dash_menu {
+  background-color: whitesmoke;
+  width: 85%;
+  height: 80%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.dash_menu h4,
+h1,
+small,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 720px) {
+  .dashboard_content {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .dashboard_content {
+    height: 85%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .dash_main {
+    height: 75vh;
+  }
+
+  .dashboard_content {
+    height: 65%;
+  }
+}
+
+/*----------------------------------*/
+
+.wrapper {
+  max-width: 80%;
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+.wrapper .arrow {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper .arrow:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper .arrow:first-child {
+  left: -22px;
+  z-index: 1;
+}
+
+.wrapper .arrow:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  height: 100%;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 8px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 85%;
+  list-style: none;
+  background-image: url(../img/uni.jpg);
+  background-size: cover;
+  background-position: center center;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+  align-self: center;
+}
+.carousel .card:hover{
+  text-decoration: none;
+}
+
+.carousel .card .circle{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  align-self: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card .circle i{
+  font-size: 80px;
+  color: var(--secondary);
+}
+
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 30px 0 5px;
+}
+
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .carousel .card .circle{
+    width: 110px;
+    height: 110px;
+  }
+  
+  .carousel .card .circle i{
+    font-size: 60px;
+  }
+}
+
+/*Estilos del menu de SICAH*/
+ .sicah_card{
+  width: 30%;
+  height: 30%;
+  margin: 5%;
+  border-radius: 5px;
+  background-image: url(../img/unilarge.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .sicah_card .circle{
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  align-self: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sicah_card  h2{
+  font-size: 25px;
+}
+
+.sicah_card .circle i{
+  font-size: 70px;
+  color: var(--secondary);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .sicah_card{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction:row;
+  }
+  .sicah_card .circle{
+    width: 50px;
+    height: 50px;
+  }
+  .sicah_card .circle i{
+    font-size: 20px;
+  }
+  .sicah_card  h2{
+    font-size: 10px;
+  }
+}

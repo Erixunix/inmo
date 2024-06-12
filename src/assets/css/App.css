@@ -1,0 +1,114 @@
+:root{
+  --primary :#10A472;
+  --primaryDark:#12855e;
+  --secondary :#E89923;
+  --secondaryDark: #c47c11;
+  --third : rgb(168, 16, 214);
+  --gradient : linear-gradient(to right, var(--secondary), var(--primary));
+  --light : #ffffffd8 ;
+  --dark : #000;
+  --danger: rgb(255, 0, 0);
+  --dangertwo : linear-gradient(to right, var(--secondary), var(--danger));
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  overflow-y: scroll; /* Siempre muestra la barra de desplazamiento vertical */
+  margin: 0;
+  font-size: 14px !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.loading{
+  padding-right: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+.loading i{
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 70px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: var(--primary);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/*Estilos de pestaña del perfil*/
+.profile_main{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+.profile_main .user-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.profile_main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile_main .detail {
+  margin-bottom: 10px;
+}
+
+.profile_main label {
+  font-weight: bold;
+}
+
+.profile_main span {
+  display: block;
+  font-size: 16px;
+  margin-top: 5px;
+}

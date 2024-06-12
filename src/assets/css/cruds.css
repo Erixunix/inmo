@@ -1,0 +1,123 @@
+@import 'select2/dist/css/select2.min.css';
+
+.cruds_main {
+    width: 100vw;
+    min-height: 88vh;
+}
+
+.cruds_bar {
+    padding-top: 10px;
+    background-color: var(--secondary);
+    align-items: center;
+}
+
+.cruds_bar .btn {
+    background-color: var(--secondaryDark);
+    width: 100%;
+    height: 50px;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cruds_bar .btn:hover {
+    transition: all .5s ease-in-out;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.cruds_content {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cruds_content .form {
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cruds_content .form button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: var(--secondary);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-top: 20px;
+}
+
+.cruds_content .form button:hover {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.cruds_content .form .element {
+    min-height: 80px;
+}
+
+.cruds_content .form .element label {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.cruds_content .form .element input {
+    width: 65%;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cruds_content .form .element input.error {
+    border: 1px solid red;
+}
+.cruds_content .form .element input.success {
+    border: 1px solid rgb(4, 91, 204);
+}
+.cruds_content .form .element select {
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*saber si el select es multiple*/
+.cruds_content .form .element select[multiple] {
+    height: 70px;
+}
+
+.cruds_content .form .element select:hover {
+    cursor: pointer;
+}
+
+.cruds_content .form .btn {}
+
+.icon-btn-slider {
+    font-size: 15px;
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .img-cruds {
+        display: none;
+    }
+
+    .text-btn-slider {
+        display: none;
+    }
+
+    .icon-btn-slider {
+        display: block;
+    }
+}
